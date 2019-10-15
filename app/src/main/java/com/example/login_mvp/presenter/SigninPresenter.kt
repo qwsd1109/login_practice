@@ -8,14 +8,14 @@ class SigninPresenter(private val view: SigninContact.View) : SigninContact.Pres
 
     fun checkLetterCount(length: Int) {
         when (length) {
-            in 1..50 -> view.errorMessage("아이디 설정이 완료되었습니다.")
+            in 1..20 -> view.checkLetterCount("")
             0 -> {
-                view.errorMessage("이메일을 입력해주시기 바랍니다.")
+                view.checkLetterCount("비밀번호를 입력해주시길 바랍니다.")
             }
 
         }
     }
-    fun checkLetterEmail(email: String) {
+    fun errorMessage(email: String) {
 
             if (android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                 view.errorMessage("")
@@ -23,6 +23,5 @@ class SigninPresenter(private val view: SigninContact.View) : SigninContact.Pres
             else{
                 view.errorMessage("이메일 형식대로 입력해주시기 바랍니다.")
             }
-
     }
 }

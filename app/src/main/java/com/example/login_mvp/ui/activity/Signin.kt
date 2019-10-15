@@ -35,14 +35,14 @@ class Signin : AppCompatActivity(), View.OnClickListener,SigninContact.View {
 
     override fun onClick(view: View?) {
         if(view?.id == R.id.sigin_btn_signin){
-            presenter.checkLetterEmail(signin_edit_id.getText().toString())
-
+            presenter.errorMessage(signin_edit_id.getText().toString())
+            presenter.checkLetterCount(signin_edit_password.getText()!!.length)
         }
     }
-    override fun errorMessage(text: String) {
-        layname.setError(text)
+    override fun checkLetterCount(text: String) {
+        sigin_laypassword.setError(text)
     }
-    override fun checkLetterEmail(text: String) {
-        layname.setError(text)
+    override fun errorMessage(text: String) {
+        sigin_layname.setError(text)
     }
 }
