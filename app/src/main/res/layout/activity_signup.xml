@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_background"
-    tools:context=".ui.activity.Signin">
+    tools:context=".ui.activity.SigninActivity">
 
     <TextView
         android:id="@+id/textView3"
@@ -36,7 +36,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/sigin_layname"
+                android:id="@+id/sigup_layname"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:counterEnabled="true"
@@ -48,7 +48,7 @@
                 app:passwordToggleEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/signin_edit_id"
+                    android:id="@+id/signup_edit_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
@@ -60,7 +60,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/sigin_laypassword"
+                android:id="@+id/sigup_vlaypassword"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:counterEnabled="true"
@@ -86,7 +86,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/laypasswordck"
+                android:id="@+id/sigup_laypasswordck"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:counterEnabled="true"
@@ -114,7 +114,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layuser"
+                android:id="@+id/sigup_layuser"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:counterEnabled="false"
@@ -138,7 +138,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/laycode"
+                android:id="@+id/sigup_laycode"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:counterEnabled="false"

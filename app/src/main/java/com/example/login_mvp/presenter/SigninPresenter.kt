@@ -1,8 +1,6 @@
 package com.example.login_mvp.presenter
 
 import com.example.login_mvp.contract.SigninContact
-import com.example.login_mvp.ui.activity.Signin
-import java.util.regex.Pattern
 
 class SigninPresenter(private val view: SigninContact.View) : SigninContact.Presenter {
 
