@@ -46,7 +46,7 @@
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_password"
+                    android:id="@+id/signin_edit_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
@@ -64,8 +64,6 @@
                 android:id="@+id/layname"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:counterEnabled="true"
-                app:counterMaxLength="30"
                 app:layout_constraintEnd_toStartOf="@+id/guideline6"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline4"
@@ -73,12 +71,12 @@
                 app:passwordToggleEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_name"
+                    android:id="@+id/signin_edit_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginBottom="3dp"
                     android:gravity="center_vertical"
-                    android:hint="USERNAME"
+                    android:hint="ID/E-MAIL"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:textSize="16sp"
@@ -129,6 +127,7 @@
                 app:layout_constraintTop_toTopOf="@+id/guideline12" />
 
             <Button
+                android:id="@+id/sigin_btn_signin"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="#F20732"

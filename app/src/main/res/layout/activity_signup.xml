@@ -48,12 +48,12 @@
                 app:passwordToggleEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_name"
+                    android:id="@+id/signin_edit_id"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginBottom="3dp"
                     android:gravity="center_vertical"
-                    android:hint="USERNAME"
+                    android:hint="ID/E-MAIL"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:textSize="16sp" />
@@ -72,7 +72,7 @@
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_password"
+                    android:id="@+id/signup_edit_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
@@ -98,7 +98,7 @@
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_passwordck"
+                    android:id="@+id/signup_edit_passwordck"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
@@ -126,12 +126,12 @@
                 app:passwordToggleEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_user"
+                    android:id="@+id/signup_edit_user"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginBottom="3dp"
                     android:gravity="center_vertical"
-                    android:hint="NAME"
+                    android:hint="USERNAME"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:textSize="16sp" />
@@ -150,10 +150,10 @@
                 app:passwordToggleEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_code"
+                    android:id="@+id/signup_edit_code"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginBottom="3dp"
                     android:gravity="center_vertical"
                     android:hint="VERIFICATION CODE"
                     android:inputType="textEmailAddress"
@@ -161,6 +161,7 @@
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
             <Button
+                android:id="@+id/signup_btn_signup"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="#F20732"
