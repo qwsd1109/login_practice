@@ -33,9 +33,11 @@ class SignupPresenter(private val view : SignupContact.View) : SignupContact.Pre
 
     fun errorUsername(name : String) {
         when (name.length) {
-            in 1..20 ->{
+            in 1..3 ->{
+                view.errorUsername("4~12글자 사이로 입력해주시길 바랍니다")
+            }in 4..12->{
                 view.errorUsername("")
-            }
+        }
             0 -> {
                 view.errorUsername("이름을 입력해주시길 바랍니다.")
             }

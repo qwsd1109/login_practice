@@ -118,7 +118,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:counterEnabled="false"
-                app:counterMaxLength="30"
+                app:counterMaxLength="12"
                 app:layout_constraintEnd_toStartOf="@+id/guideline6"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline4"
@@ -142,7 +142,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:counterEnabled="false"
-                app:counterMaxLength="30"
+                app:counterMaxLength="6"
                 app:layout_constraintEnd_toStartOf="@+id/guideline6"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/guideline4"
@@ -156,7 +156,7 @@
                     android:layout_marginBottom="3dp"
                     android:gravity="center_vertical"
                     android:hint="VERIFICATION CODE"
-                    android:inputType="textEmailAddress"
+                    android:inputType="number"
                     android:maxLines="1"
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
