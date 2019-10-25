@@ -8,8 +8,7 @@ import com.example.login_mvp.contract.SignupContact
 import com.example.login_mvp.presenter.SignupPresenter
 import kotlinx.android.synthetic.main.activity_signup.*
 
-class SignupActivity : AppCompatActivity(), View.OnClickListener , SignupContact.View{
-
+class SignupActivity : AppCompatActivity(), View.OnClickListener, SignupContact.View {
 
 
     private lateinit var presenter: SignupPresenter
@@ -27,12 +26,20 @@ class SignupActivity : AppCompatActivity(), View.OnClickListener , SignupContact
     }
 
     override fun onClick(view: View?) {
-        if(view?.id == R.id.signup_btn_signup){
-            presenter.errorMessage(signup_edit_id.getText().toString())
+        if (view?.id == R.id.signup_btn_signup) {
+            presenter.chckckContents(
+                signup_edit_id.getText().toString(),
+                signup_edit_password.getText()!!.length,
+                signup_edit_password.getText().toString(),
+                signup_edit_passwordck.getText().toString(),
+                signup_edit_user.getText().toString(),
+                signup_edit_code.getText().toString()
+            )
+            /*presenter.errorMessage(signup_edit_id.getText().toString())
             presenter.checkLetterCount(signup_edit_password.getText()!!.length)
             presenter.checkPWmatch(signup_edit_password.getText().toString(),signup_edit_passwordck.getText().toString())
             presenter.errorUsername(signup_edit_user.getText().toString())
-            presenter.checkCode(signup_edit_code.getText().toString())
+            presenter.checkCode(signup_edit_code.getText().toString())*/
         }
     }
 
@@ -47,9 +54,11 @@ class SignupActivity : AppCompatActivity(), View.OnClickListener , SignupContact
     override fun errorMessage(text: String) {
         sigup_layname.setError(text)
     }
+
     override fun errorUsername(text: String) {
         sigup_layuser.setError(text)
     }
+
     override fun checkCode(text: String) {
         sigup_laycode.setError(text)
     }
